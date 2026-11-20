@@ -1,16 +1,32 @@
-## Hi there 👋
+# Afeef Ansari — Engineering Portfolio
 
-<!--
-**AfeefAnsari/AfeefAnsari** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+A responsive, dark-themed personal portfolio built with plain HTML, CSS, and JavaScript.
 
-Here are some ideas to get you started:
+## Files
+- `index.html` — homepage
+- `projects.html` — project index
+- `about.html` — background, skills, activities, and contact
+- `journal.html` — technical writing index
+- `projects/` — individual project pages
+- `style.css` — site styling
+- `script.js` — mobile navigation, project filters, and current year
+- `assets/` — favicon and (later) your project photos/diagrams
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+## Preview locally
+Open `index.html` in a browser. No build step or package installation is required.
+
+## Publish with GitHub Pages
+1. Open your `AfeefAnsari.github.io` repository.
+2. Upload the contents of this folder to the repository's root (not the containing `afeef_portfolio` folder).
+3. Commit the files to the `main` branch.
+4. In the repository, open **Settings → Pages** and confirm GitHub Pages is deploying from the `main` branch and `/ (root)`.
+5. Visit `https://afeefansari.github.io/`.
+
+## Before publishing
+- Confirm the activities and experience entries on `about.html`.
+- Replace the LinkedIn placeholder URL with your actual profile, or remove it.
+- Add your preferred professional email/contact method if you want one displayed.
+- Add genuine project photographs, plots, diagrams, and repository links.
+- Review every project description for accuracy. The current copy deliberately labels work as in progress, exploratory, or past project where appropriate.
+
+The project pages are first drafts. No results, credentials, or completed outcomes have been invented.
