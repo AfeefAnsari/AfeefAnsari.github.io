@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>My fusor attempt: what I built, what broke, what I learned | Afeef Ansari</title><meta name="description" content="A retrospective on my attempt to build an inertial electrostatic confinement fusor.">
+<link rel="stylesheet" href="style.css"></head>
+<body><a class="skip" href="#main">Skip to content</a>
+<header class="site"><div class="col bar"><a class="brand" href="index.html"><span class="mark" aria-hidden="true">AA</span>Afeef Ansari</a><nav aria-label="Main"><a href="projects.html">Projects</a><a href="about.html">About</a><a href="journal.html" aria-current="page">Journal</a></nav></div></header>
+<main id="main" class="col">
+<p class="crumb"><a href="journal.html">Journal</a></p>
+<article>
+<div class="ph"><h1>My fusor attempt: what I built, what broke, and what I learned</h1>
+<p class="lead">I tried to build an inertial electrostatic confinement (IEC) fusor. It didn’t work, and I never got a verified fusion result. This is a look back at what I did and what went wrong.</p></div>
+<p class="note">The project involved high-voltage equipment and hazardous gases. This is a retrospective, not a guide. I’ve included how I built the enclosure, chamber and grid, but I’ve left out the electrical design and ratings, operating voltages and currents, and any gas or chemical procedures.</p>
+
+<section><h2>Starting out</h2>
+<p>I started by writing an outline of what I would need to find and build. It had three main parts: a high-voltage power supply, a vacuum chamber, and an inner metal grid that sits inside the chamber.</p>
+<p>I also wrote down questions I wanted answered before building more. They covered things like continuous versus pulsed operation, how open the grid should be, cooling, keeping the gas clean, how fusors scale, and how you would measure performance.</p>
+<p>The measurement question taught me something early. A working power supply or a glowing chamber doesn’t show that fusion is happening. The usual evidence is a neutron count from a proper detector, compared against a background reading so electrical noise isn’t mistaken for a signal. I didn’t reach that stage, but it changed how I thought about the whole project.</p></section>
+
+<section><h2>What I built</h2>
+<p><strong>The power supply.</strong> I built a voltage multiplier from capacitors and diodes, soldered onto a pair of circuit boards. To house it, I lined the boards up on a sheet of plexiglass and marked them out. I cut a base about 9 by 6.5 inches, with sides about 2.25 inches tall, then glued the pieces together with epoxy resin. I waited 24 hours for the epoxy to cure and then checked that the boards fit inside.</p>
+<p><strong>The chamber.</strong> The chamber is an aluminum tube about 7.9 inches in diameter and 4.675 inches wide, with a quarter-inch wall. A machinist cut it for me, including trimming a quarter inch off the height. Plexiglass covers the sides. I measured the plexiglass against the outer circumference of the aluminum and cut it to match.</p>
+<p><strong>The grid.</strong> I coiled copper wire, cut it into four circles, and soldered the points together into a spherical grid. I made sure everything was well connected and soldered a screw to the grid.</p></section>
+
+<section><h2>What went wrong</h2>
+<h3>The capacitors were underrated</h3>
+<p>My first capacitors couldn’t handle enough voltage for what I wanted to do. I had to order new ones with a much higher rating. I should have checked the ratings against my plan before ordering.</p>
+<h3>Cutting plexiglass took three tries</h3>
+<p>I started with a handsaw, but it took too long. I bought a Dremel, which was faster, but it wasn’t accurate on the thick plexiglass and it was still slow. In the end my neighbor let me use his Ryobi jigsaw, and I finished the cut in under a minute. I also broke one of the plexiglass pieces for the chamber walls by accident and had to cut a replacement.</p>
+<h3>Getting the aluminum cut was expensive</h3>
+<p>I bought aluminum stock and called around, but the metal companies I tried couldn’t cut it. Someone at a small company pointed me to another shop. A machinist there did the job, but it cost $250, and he took $50 off. Later I realized that if I had found him first and just given him my dimensions, he could have sourced, cut and polished the metal for about $150 total.</p>
+<h3>I drilled a hole without knowing it needed a tap</h3>
+<p>I drilled a hole for a pipe fitting in the aluminum without thinking about threads. I didn’t know how to thread it, so I asked on Reddit and learned I needed the right pipe tap. A regular drill kept wobbling while I worked, so I used an impact driver, which held steadier.</p>
+<h3>The high-voltage supply wouldn’t work</h3>
+<p>The supply was wired correctly, but it didn’t work. I checked it with a multimeter and the readings looked fine. I then re-soldered the diodes, a capacitor and a lead, and it started working. I never found out which one was the problem. My best guess is the lead, which looked loose. It could also have been a slightly cold solder joint on the capacitor.</p>
+<h3>The pump worked, but the chamber leaked</h3>
+<p>I tested the vacuum pump on its own first, and at the start it wouldn’t get to the vacuum level I was aiming for. The pump’s built-in leak indicator showed a leak of about 15%. I replaced a brass valve and a hose fitting because one of them was partly broken, and the numbers improved a little. After I ran out of Teflon tape, I re-sealed the connections with more, and the pump reached its target quickly.</p>
+<p>The trouble started when I connected the pump to the chamber. I threaded the brass valve and fitting into the aluminum, and it began leaking. I tried sealing around the entrance of the chamber hole with resin, but I never found where the rest of the leak was coming from. The pump worked fine alone, so I knew the problem was in the chamber, the fittings or the connections. I couldn’t narrow it down any further.</p></section>
+
+<section><h2>What I learned</h2>
+<ul>
+<li>Check the specifications of every part against the plan before you order it.</li>
+<li>The design on paper is the easy part. Sealing, fabrication and soldering are where most of my time went.</li>
+<li>Ask people who know the tools. A neighbor with a jigsaw saved more time than anything I bought.</li>
+<li>Get quotes from machinists early, and ask what they can source themselves.</li>
+<li>Test each subsystem on its own. When a power supply fails, it helps to know which part is at fault.</li>
+<li>A pump that works on its own tells you very little about the chamber. I needed a way to test each joint and fitting separately.</li>
+</ul></section>
+
+<section><h2>What I’d do differently</h2>
+<p>I would check part ratings before ordering, find a machinist before buying metal, and inspect every solder joint before assuming a circuit is bad. I would also plan the sealing and threading of the chamber at the start, and test each fitting and joint by itself before putting the whole chamber together, so I could find a leak by elimination.</p></section>
+
+<section><h2>Where it stands</h2>
+<p>This was an attempt. I never found the chamber leak, so I didn’t get fusion and I didn’t measure any neutrons. What I got was hands-on experience with fabrication, troubleshooting and the gap between a design and a working system. See the <a href="project-fusor.html">Fusor Project page</a> for a short summary.</p></section>
+</article>
+</main>
+<footer class="site"><div class="col foot"><div><p class="fname">Afeef Ansari</p><p>Mechanical Engineering student at Clemson University.</p></div><p><a href="https://github.com/AfeefAnsari">GitHub</a></p></div></footer>
+</body></html>
